@@ -30,6 +30,9 @@ public class MainMenuUIController : MonoBehaviour
     public AudioClip backgroundMusic;
     public AudioClip creditsSFX;
 
+    [Header("Animator")]
+    public Animator creditsAnimator;
+
 
     private int indexOfSelectedButton;
     private int indexOfSelectedOption;
@@ -117,6 +120,8 @@ public class MainMenuUIController : MonoBehaviour
     public void PressCreditsButton()
     {
         //instructions.SetActive(!instructions.activeSelf); // hide the instructions when in credits
+        creditsAnimator.SetTrigger("Reset");
+        buttonPanel.SetActive(!buttonPanel.activeSelf);
         creditsPanel.SetActive(!creditsPanel.activeSelf);
     }
 
@@ -345,7 +350,7 @@ public class MainMenuUIController : MonoBehaviour
                         {
                             audio.SetVolume(volume);
                         }
-                        PlayerPrefs.SetFloat("Volume", volume);
+                        PlayerPrefs.SetFloat("Volume", volume); 
                         break;
                 }
             }
@@ -375,15 +380,10 @@ public class MainMenuUIController : MonoBehaviour
 
     private void SetCreditsTxt()
     {
-        string creditsTxt = @"
+        string creditsTxt = @"The J-4P-AN:MECHA WARS Team
 
 
-
-
-The J-4P-AN:MECHA WARS Team
-
-
-<color=#000000FF>--Programming--</color>
+<color=#404040FF>--Programming--</color>
 
 Andreas Andreou
 Jack Hadjicosti
@@ -391,26 +391,26 @@ Michalis Prodromou
 Sergios Stamatis
 
 
-<color=#000000FF>--3D Modelling, Texturing, Visuals and UI--</color>
+<color=#404040FF>--3D Modelling, Texturing, UI--</color>
 
 Theodore Constandinou
 Stephanos Filippou
 
 
-<color=#000000FF>--Music and sound effects--</color>
+<color=#404040FF>--Music and sound effects--</color>
 
 Andreas Giavroutas
 Nik Popov
 
 
-<color=#000000FF>--Special thanks--</color>
+<color=#404040FF>--Special thanks--</color>
+<color=#404040FF>To our testers:</color>
 
-To our testers:
 Markos Filippou
 Antonis Antoniou
 
 
-<color=#000000FF>GAME OVER!!!</color>";
+<color=#404040FF>GAME OVER!!!</color>";
         creditsPanel.GetComponentInChildren<Text>().text = creditsTxt;
     }
 }
