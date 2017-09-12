@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamCyprus2017", "GameJamCyprus2017.csproj", "{6DAE2AAF-1DC9-EFA4-69EA-8FE21D7E93AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamCyprus2017.Editor", "GameJamCyprus2017.Editor.csproj", "{4895295D-FC7D-4084-57F5-158BA467A20E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DAE2AAF-1DC9-EFA4-69EA-8FE21D7E93AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DAE2AAF-1DC9-EFA4-69EA-8FE21D7E93AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DAE2AAF-1DC9-EFA4-69EA-8FE21D7E93AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DAE2AAF-1DC9-EFA4-69EA-8FE21D7E93AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4895295D-FC7D-4084-57F5-158BA467A20E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4895295D-FC7D-4084-57F5-158BA467A20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4895295D-FC7D-4084-57F5-158BA467A20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4895295D-FC7D-4084-57F5-158BA467A20E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
